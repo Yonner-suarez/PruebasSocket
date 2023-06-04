@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat en Vivo con Socket.io</title>
+    <script src="https://cdn.socket.io/socket.io-3.1.3.min.js"></script>
+    <script>
+      // Conectar al servidor de Socket.io
+      const socket = io();
+
+      // Manejar evento de envío de mensaje
+      function sendMessage() {
+        const messageInput = document.getElementById("message");
+        const message = messageInput.value;
+        // Emitir el evento 'chat message' al servidor
+        socket.emit("chat message", message);
+        messageInput.value = "";
+      }
+
+      // Manejar evento de recepción de mensaje
+      socket.on("chat message", (message) => {
+        const messagesContainer = document.getElementById("messages");
+        const messageElement = document.createElement("li");
+        messageElement.textContent = message;
+        messagesContainer.appendChild(messageElement);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Chat en Vivo</h1>
+    <ul id="messages"></ul>
+    <input type="text" id="message" placeholder="Escribe un mensaje" />
+    <button onclick="sendMessage()">Enviar</button>
+  </body>
+</html>

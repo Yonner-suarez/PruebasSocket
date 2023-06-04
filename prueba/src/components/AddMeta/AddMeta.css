@@ -1,0 +1,132 @@
+.contenedorAddMetas {
+  background: #faf8fe;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 261px;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+}
+.contenedorAddMetasOver {
+  background: #faf8fe;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 261px;
+
+  border-radius: 8px;
+}
+.content {
+  width: 40%;
+  background-color: #392b75;
+}
+.contenedorSvg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 94px;
+  border-radius: 70px;
+  background: #e9e9e9;
+  margin: auto 0;
+  margin-left: 20px;
+}
+.Establecer {
+  width: 391px;
+  height: 56px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+
+  letter-spacing: 0.2px;
+
+  color: #392b75;
+}
+.parrafoEstablecer {
+  width: 391px;
+  height: 40px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  letter-spacing: 0.2px;
+
+  color: #392b75;
+}
+.botonEstablecer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 40px;
+  margin-left: 50%;
+  width: 186px;
+  height: 42px;
+  float: right;
+  background: #937cf4;
+  border-radius: 8px;
+}
+.contenedorInfo {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.parrafoBoton {
+  width: 106px;
+  height: 40px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.contenedorIngresaMonto {
+  width: 100%;
+  background-color: #392b75;
+}
+@media screen and (max-width: 1500px) {
+}
+@media screen and (max-width: 600px) {
+  .contenedorSvg {
+    width: 18%;
+  }
+  .contenedorInfo {
+    width: 70%;
+  }
+  .parrafoEstablecer {
+    width: 100%;
+    height: auto;
+  }
+  .Establecer {
+    width: 100%;
+    height: auto;
+  }
+  .botonEstablecer {
+    margin: 0 auto;
+  }
+}

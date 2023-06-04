@@ -1,0 +1,98 @@
+.monto {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  letter-spacing: 0.241188px;
+
+  color: #4d4d4d;
+}
+.input {
+  box-sizing: border-box;
+  color: rgba(79, 76, 76, 0.71);
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 16px;
+
+  letter-spacing: 0.241188px;
+
+  width: 70%;
+  height: 30px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 0.602969px solid #392b75;
+  border-radius: 5px;
+}
+.input::placeholder {
+  color: rgba(62, 60, 60, 0.69);
+  padding-top: 15px;
+}
+.confirmarMeta {
+  width: 391px;
+  height: 36px;
+  margin-top: -10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+
+  letter-spacing: 0.2px;
+
+  color: #392b75;
+}
+.botonConfirmar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 65px;
+
+  width: 50%;
+  height: 42px;
+
+  background: #937cf4;
+  border-radius: 8px;
+  margin-top: 38px;
+  margin-left: 55%;
+}
+.contenedorWriteMeta {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 261px;
+
+  border-radius: 8px;
+}
+@media screen and (max-width: 1500px) {
+  .input {
+    width: 90%;
+  }
+  .botonConfirmar {
+    margin-top: 1%;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorInfo {
+    width: 70%;
+  }
+  .confirmarMeta {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .monto {
+    margin: 0;
+  }
+  .input {
+    width: 90%;
+  }
+  .botonConfirmar {
+    margin-top: 1%;
+    padding: 0 35px;
+  }
+}

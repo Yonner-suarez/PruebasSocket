@@ -1,0 +1,92 @@
+.botonEditar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 1px 40px;
+  gap: 10px;
+
+  width: 157px;
+  height: 42px;
+
+  background: #937cf4;
+  border-radius: 8px;
+  margin-left: 50%;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.contenedorPorcentaje {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+}
+.contenedorPorcentajeInfo {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedorAll {
+  background-color: transparent;
+  width: 100%;
+}
+.contenedorInfoProgreso {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 8%;
+}
+.contenedorPorcentaje .span {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-3%, -10%);
+  font-size: 24px;
+  color: black;
+}
+.contenedorBoton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (max-width: 1500px) {
+  .contenedorBoton {
+    width: 90%;
+  }
+  .contenedorPorcentaje {
+    width: 30%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .botonEditar {
+    margin-left: 0;
+    width: 50%;
+  }
+  .contenedorBoton {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+  }
+  .botonEditar {
+    padding: 0 12px;
+  }
+}

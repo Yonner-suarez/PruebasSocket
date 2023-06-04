@@ -1,0 +1,206 @@
+.allContenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+}
+.container {
+  background-color: transparent;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.CómoVaTuSemana {
+  width: 100%;
+  height: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+
+  letter-spacing: 0.2px;
+
+  color: #b554cc;
+}
+.contendorMetaSemanal {
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2%;
+}
+.componentComoVa {
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2%;
+}
+.contendorClientesAtendidos {
+  margin-top: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2%;
+}
+.Clientes {
+  width: 162px;
+  height: 23px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+
+  letter-spacing: 0.2px;
+
+  color: #45348e;
+}
+.Ventas {
+  width: 61px;
+  height: 23px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #45348e;
+}
+.MetaSemanal {
+  width: 124px;
+  height: 23px;
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  color: #45348e;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+  height: 200px;
+  margin: 20px;
+}
+.componentClientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+  height: 200px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    margin-top: 0%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .component {
+    width: 50%;
+    height: auto;
+  }
+  .componentClientes {
+    width: 50%;
+  }
+  .componentComoVa {
+    width: 50%;
+  }
+  .contendorClientesAtendidos {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .allContenedor {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .componentComoVa {
+    width: 80%;
+    background: transparent;
+  }
+  .component {
+    width: 80%;
+    height: auto;
+  }
+  .contendorClientesAtendidos {
+    background-color: transparent;
+    width: 50%;
+    margin-left: 0;
+  }
+  .contendorMetaSemanal {
+    background: transparent;
+    width: 80%;
+  }
+  .componentClientes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .componentComoVa {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .component {
+    background-color: transparent;
+    height: 100%;
+    width: 95%;
+    margin-top: 5%;
+    flex-basis: 0%;
+    flex-direction: column;
+  }
+  .componentClientes {
+    width: 100%;
+  }
+  .contendorClientesAtendidos {
+    margin: 0;
+    width: 100%;
+  }
+}
